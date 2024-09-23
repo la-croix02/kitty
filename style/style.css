@@ -1,0 +1,106 @@
+@import url('font.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato';
+    font-weight: 400;
+    color: #1a212f;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+button, input, textarea, select {
+    font: inherit;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+button {
+    cursor: pointer;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+}
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43px;
+}
+.header {
+    padding: 12px;
+}
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu {
+    display: flex;
+    gap: 30px;
+}
+.menu__list-link {
+    font-weight: 700;
+    line-height: 19px;
+}
+.intro {
+    min-height: 504px;
+    background: url('../images/intro-bg.jpg') no-repeat center/cover;
+}
+.intro__inner {
+    padding-top: 153px;
+}
+.intro__info {
+    padding-left: 100px;
+}
+.intro__info-city {
+    font-size: 14px;
+    line-height: 17px;
+}
+.intro__info-name {
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 62px;
+    margin-bottom: 6px;
+}
+.intro__info-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+.intro__info-btn {
+    border-radius: 25px;
+    box-shadow: 0px 5px 25px 0px rgba(26, 33, 47, 0.1);
+    background: rgb(255, 254, 253);
+    padding: 18px 63px 20px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 12px;
+    position: relative;
+}
+.intro__info-btn::after {
+    content: '';
+    display: block;
+    width: 36px;
+    height: 36px;
+    background: url('../images/icons/paw.svg') no-repeat center;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+}
