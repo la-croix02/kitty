@@ -9,6 +9,7 @@ body {
     font-family: 'Lato';
     font-weight: 400;
     color: #1a212f;
+    background-color: #fffefd;
 }
 ul, ol {
     list-style: none;
@@ -43,7 +44,7 @@ button {
     line-height: 43px;
 }
 .header {
-    padding: 12px;
+    padding: 12px 0;
 }
 .header__nav {
     display: flex;
@@ -61,6 +62,7 @@ button {
 .intro {
     min-height: 504px;
     background: url('../images/intro-bg.jpg') no-repeat center/cover;
+    background-size: cover;
 }
 .intro__inner {
     padding-top: 153px;
@@ -103,4 +105,45 @@ button {
     position: absolute;
     right: 7px;
     top: 7px;
+}
+.why-us {
+    padding: 140px 0 70px;
+    background: url('../images/pow-bg.png') no-repeat;
+    background-position: right top;
+}
+.why-us__title {
+    margin-bottom: 70px;
+    text-align: center;
+}
+.why-us__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.why-us__card {
+    max-width: 370px;
+    width: 100%;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 25px 0px rgba(208, 208, 208, 0.25);
+    background: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+.why-us__card:nth-child(4),
+.why-us__card:nth-child(5),
+.why-us__card:nth-child(6) {
+    margin-bottom: 0;
+}
+.why-us__card-img {
+    margin-bottom: 35px;
+}
+.why-us__card-title {
+    border-radius: 8px;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.why-us__card-text {
+    line-height: 140%;
 }
