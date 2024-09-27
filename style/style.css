@@ -148,7 +148,7 @@ button {
     line-height: 140%;
 }
 .rooms {
-    padding: 70px 0;
+    padding: 70px 0 20px;
     background: url('../images/fish-bg.png') no-repeat;
     background-position: left 70px;
 }
@@ -234,8 +234,9 @@ button {
 }
 .slider-control {
     position: relative;
-    margin-top: 43px;
+    margin: 43px auto 0;
     height: 43px;
+    max-width: 1030px;
 }
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 6px;
@@ -278,4 +279,51 @@ button {
 }
 .swiper-button-prev::after {
     background: url('../images/icons/arrow-prev.svg') no-repeat center;
+}
+.reviews {
+    padding: 120px 0 140px;
+    background: url('../images/pow2-bg.png') no-repeat;
+    background-position: right top;
+}
+.reviews__title {
+    text-align: center;
+    margin-bottom: 55px;
+}
+/* .reviews__slider {
+    margin-left: 85px;
+} */
+.reviews__slider-wrapper {
+    padding-left: 15px;
+    padding-top: 15px;
+    margin-left: 85px;
+}
+.reviews__slider-slide {
+    padding: 35px 35px 35px 70px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 25px 0px #d0d0d040;
+    background: #ffffff;
+    max-width: 470px;
+    width: 100%;
+    position: relative;
+}
+.reviews__slider-slide::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url('../images/icons/quote.svg') no-repeat;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+}
+.reviews__slider-text {
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.reviews__slider-bottom {
+    display: flex;
+    justify-content: space-between;
+    color: #848484;
+    font-size: 14px;
+    line-height: 11px;
 }
