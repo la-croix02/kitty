@@ -3,14 +3,32 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const burgerMenu = document.querySelector('.burger-menu'),
           menuList = document.querySelector('.header .menu'),
-          body = document.querySelector('body');
+          body = document.querySelector('body'),
+          menuListItems = document.querySelectorAll('.js-scroll-to');
     
+
     burgerMenu.addEventListener('click', () => {
         burgerMenu.classList.toggle('active');
         menuList.classList.toggle('active');
         body.classList.toggle('active');
     })
-    console.log(burgerMenu, menuList)
+
+    
+    menuListItems.forEach(item => {
+        item.addEventListener('click', (event) => {
+            event.preventDefault();
+            burgerMenu.classList.remove('active');
+            menuList.classList.remove('active');
+            body.classList.remove('active');
+            const sectionId = item.getAttribute('href').substring(1);
+
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            })
+        })
+    })
+
 
     new Swiper('.rooms__slider', {
         navigation: {
