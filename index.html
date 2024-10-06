@@ -41,7 +41,7 @@
                     <div class="intro__info-city">Санкт-Петербург</div>
                     <div class="intro__info-name">Котейка</div>
                     <h1 class="intro__info-title">Уютная гостиница для котов и кошек</h1>
-                    <button class="intro__info-btn">Забронировать</button>
+                    <button class="intro__info-btn" data-modal>Забронировать</button>
                 </div>
             </div>
         </div>
@@ -71,7 +71,7 @@
                     <div class="why-us__card">
                         <img class="why-us__card-img" src="images/why-us-img4.png" alt="Питание">
                         <h3 class="why-us__card-title">Сбалансированное питание</h3>
-                        <p class="why-us__card-text">ВВы можете привезти свой корм или доверить рацион своего питомца нашим профессионалам. </p>
+                        <p class="why-us__card-text">Вы можете привезти свой корм или доверить рацион своего питомца нашим профессионалам. </p>
                     </div>
                     <div class="why-us__card">
                         <img class="why-us__card-img" src="images/why-us-img5.png" alt="Прогулки">
@@ -99,7 +99,7 @@
                                 <li class="rooms__slider-info-item">Размеры (ШхГхВ) — 90х100х180 см</li>
                                 <li class="rooms__slider-info-item">Цена за сутки: 200₽</li>
                             </ul>
-                            <button class="rooms__slider-info-btn">Забронировать</button>
+                            <button class="rooms__slider-info-btn" data-modal>Забронировать</button>
                         </div>
                     </div>
                     <div class="rooms__slider-slide swiper-slide">
@@ -111,7 +111,7 @@
                                 <li class="rooms__slider-info-item">Размеры (ШхГхВ) - 100х125х180 см</li>
                                 <li class="rooms__slider-info-item">Цена за сутки: 250₽</li>
                             </ul>
-                            <button class="rooms__slider-info-btn">Забронировать</button>
+                            <button class="rooms__slider-info-btn" data-modal>Забронировать</button>
                         </div>
                     </div>
                     <div class="rooms__slider-slide swiper-slide">
@@ -123,7 +123,7 @@
                                 <li class="rooms__slider-info-item">Размеры (ШхГхВ) - 125х125х180 см</li>
                                 <li class="rooms__slider-info-item">Цена за сутки: 350₽</li>
                             </ul>
-                            <button class="rooms__slider-info-btn">Забронировать</button>
+                            <button class="rooms__slider-info-btn" data-modal>Забронировать</button>
                         </div>
                     </div>
                 </div>
@@ -266,6 +266,41 @@
             </div>
         </div>
     </footer>
+    <div class="modal-form modal">
+        <div class="modal__window-wrapper">
+            <div class="modal__window">
+                <h3 class="modal__window-title">Забронировать номер</h3>
+                <form action="#"> 
+                    <input class="modal__window-field" required placeholder="Ваше имя" name="name" type="text">
+                    <input class="modal__window-field" required placeholder="Имя Питомца" name="pet-name" type="text">
+                    <input class="modal__window-field" required placeholder="Телефон" name="phone" type="text">
+                    <input class="modal__window-field" required placeholder="E-mail" name="email" type="text">
+                    <div class="modal__window-date">
+                        <span>Дата заезда c</span>
+                        <input class="modal__window-field-date" required placeholder="26.01.2024" name="first-date" type="text">
+                        <span>по</span>
+                        <input class="modal__window-field-date" required placeholder="26.01.2024" name="second-date" type="text">
+                    </div>
+                    <button class="modal__window-btn" type="submit">Отправить заявку</button>
+                </form>
+                <div class="modal__close" data-close>
+                    <img src="images/icons/close.svg" alt="close">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-result modal">
+        <div class="modal__window-wrapper">
+            <div class="modal__window">
+                <h3 class="modal__window-title"></h3>
+                <p class="modal__window-text"></p>
+                <button class="modal__window-btn" data-close>Ок</button>
+                <div class="modal__close" data-close>
+                    <img src="images/icons/close.svg" alt="close">
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="js/swiper-bundle.min.js"></script>

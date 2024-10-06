@@ -74,6 +74,12 @@
     .contacts__info-list {
         font-size: 14px;
     }
+    .modal__window {
+        padding: 40px;
+    }
+    .modal__window-title {
+        font-size: 24px;
+    }
 }
 @media (max-width: 576px) {
     .header .menu {
@@ -171,11 +177,34 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+    .modal__window {
+        padding: 70px 20px 20px 20px;
+    }
+    .modal__window-title {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+    .modal__window-date {
+        flex-direction: column;
+        margin-bottom: 25px;
+        gap: 5px;
+    }
+    .modal__window-field-date {
+        width: 200px;
+        padding: 20px 55px;
+    }
 }
 @media (max-width: 480px) {
     .footer__bottom-inner {
         flex-direction: column;
         align-items: center;
         gap: 10px;
+    }
+    .modal__window-title {
+        font-size: 20px;
+    }
+    .modal__close {
+        top: 25px;
+        right: 15px;
     }
 }
