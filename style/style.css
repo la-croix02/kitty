@@ -450,7 +450,7 @@ button {
     opacity: 1;
 }
 .modal__window-wrapper {
-    padding: 0 15px;
+    padding: 0 15px 15px;
     position: fixed;
     top: 7%;
     left: 50%;
